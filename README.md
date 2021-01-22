@@ -24,6 +24,7 @@ Features
 - NTP Support for time sync with internet time servers
 - Webserver support (default port 8080)
 - ABP Activate
+- frequence 433 MHz : 410 - 525 MHz
 
 Not (yet) supported:
 - PACKET_PUSH_ACK processing
@@ -31,38 +32,25 @@ Not (yet) supported:
 - FSK modulation
 - downstream messages (tx)
 
-Added features if you're using [WeMos-Lora][3] Shield as gateway
-- 2 On board RGB LED for visual 
-- 1 SSD1306 I2C OLED connector
-- 1 On board push button
-
-Assembled WeMos-Lora Shield
-
-<img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/WeMos-Lora-top-assembled.jpg" alt="Top">    
-<img src="https://raw.githubusercontent.com/hallard/WeMos-Lora/master/WeMos-Lora-bot-assembled.jpg" alt="Bottom">    
-
-
 Dependencies
 ------------
 
-- [gBase64][7] library by Adam Rudd is now integrated in the project, no need to install
-- [Time][5] library Arduino [documentation][6]
-- [NeoPixelBus][4] library is you're using [WeMos Lora][3] Shield as gateway
+- [gBase64][1] library by Adam Rudd is now integrated in the project, no need to install
+- [Time][2] library Arduino [documentation][3]
+- lmic lib
 
 Connections
 -----------
-See [things4u][8] in the [hardware][9] section for building and connection instructions
-See [WeMos-Lora][3] github if you're using WeMos Lora Shield as gateway
+In Altium Designer of this repository
 
 
 Configuration
 -------------
 
-Defaults:
+Defaults: gateway, node
 
-- LoRa:   SF7 at 868.1 Mhz
-- Server: 54.229.214.112, port 1700  (The Things Network: croft.thethings.girovito.nl)
-  or directly croft.thethings.girovito.nl
+- LoRa:   SF7 at 486.3 Mhz
+- Server: router.cn.thethings.network, port 1700  (The Things Network: router.cn.thethings.network)
 
 Edit .h file (ESP-sc-gway.h) to change configuration (look for: "Configure these values!").
 
@@ -70,16 +58,10 @@ Please set location, email and description.
 
 License
 -------
-The source files in this repository are made available under the Eclipse
-Public License v1.0, except for the base64 implementation, that has been
+The source files in this repository are made available under the Arduino IDE
+v1.8.13, except for the base64 implementation, that has been
 copied from the Semtech Packet Forwader.
 
-
-[2]: https://hallard.me
-[3]: https://github.com/hallard/WeMos-Lora
-[4]: https://github.com/Makuna/NeoPixelBus
-[5]: https://github.com/PaulStoffregen/Time
-[6]: http://playground.arduino.cc/code/time
-[7]: https://github.com/adamvr/arduino-base64
-[8]: http://things4u.github.io
-[9]: http://things4u.github.io/HardwareGuide/hardware_guide.html
+[1]: https://github.com/adamvr/arduino-base64
+[2]: https://github.com/PaulStoffregen/Time
+[3]: http://playground.arduino.cc/code/time
