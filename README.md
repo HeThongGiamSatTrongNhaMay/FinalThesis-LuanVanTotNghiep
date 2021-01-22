@@ -1,4 +1,4 @@
-Monitoring System in Factory - Hệ Thống Giám Sát Thiết Bị Trong Nhà Máy
+Monitoring System in Factory Using LoRaWAN Technology - Hệ Thống Giám Sát Thiết Bị Trong Nhà Máy
 ==============================
 This repository contains a proof-of-concept implementation of a Monitoring 
 System in Factory using LoRaWAN technology. It includes a single channel 
