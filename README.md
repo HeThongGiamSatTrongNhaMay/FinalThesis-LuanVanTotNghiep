@@ -41,7 +41,7 @@ Dependencies
 
 - [gBase64][1] library by Adam Rudd is now integrated in the project, no need to install
 - [Time][2] library Arduino [documentation][3]
-- lmic lib [4]
+- [lmic lib][4]
 
 Connections
 -----------
