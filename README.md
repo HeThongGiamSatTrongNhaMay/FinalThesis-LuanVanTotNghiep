@@ -12,6 +12,10 @@ Engine for gateway is based on code base of Single Channel gateway for Raspberry
 which is developed by Thomas Telkamp. Code was ported and extended to run
 on ESP 8266 mcu and provide RTC, Webserver and DNS services.
 
+Topology for this project : 4 nodes (2 measure humidity and temperature; 2 measure ac energy).
+A LoRaWAN gateway pushes data from these 4 nodes to network server TTN. Data then is forwarded 
+to IoT Cloud ThingSpeak. Source code, lib and hardware are saved in this repository.
+
 Maintained by Minh Chau (huynhminhchau.k14@gmail.com)
 
 Features
@@ -37,7 +41,7 @@ Dependencies
 
 - [gBase64][1] library by Adam Rudd is now integrated in the project, no need to install
 - [Time][2] library Arduino [documentation][3]
-- lmic lib
+- lmic lib [4]
 
 Connections
 -----------
@@ -65,3 +69,4 @@ copied from the Semtech Packet Forwader.
 [1]: https://github.com/adamvr/arduino-base64
 [2]: https://github.com/PaulStoffregen/Time
 [3]: http://playground.arduino.cc/code/time
+[4]: https://github.com/HeThongGiamSatTrongNhaMay/LuanVanTotNghiep/tree/main/lib
