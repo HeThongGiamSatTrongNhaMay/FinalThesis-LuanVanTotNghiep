@@ -1,4 +1,4 @@
-Single Channel LoRaWAN Gateway
+Hệ Thống Giám Sát Thiết Bị Trong Nhà Máy - Monitoring System in Factory
 ==============================
 This repository contains a proof-of-concept implementation of a single
 channel LoRaWAN gateway. It has been tested on the Wemos D1 Mini, using a 
