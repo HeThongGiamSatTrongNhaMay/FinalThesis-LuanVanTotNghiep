@@ -1,29 +1,29 @@
 Hệ Thống Giám Sát Thiết Bị Trong Nhà Máy - Monitoring System in Factory
 ==============================
-This repository contains a proof-of-concept implementation of a single
-channel LoRaWAN gateway. It has been tested on the Wemos D1 Mini, using a 
-Semtech SX1276 transceiver (HopeRF RFM95W).
+This repository contains a proof-of-concept implementation of a Monitoring 
+System in Factory using LoRaWAN technology. It includes a single channel 
+LoRaWAN gateway(from ESP8266, and SX1278 tranceiver) and 4 LoRaWAN node
+(from ATmega328P and DHT11, DHT22 sensor, PZEM004T).
 
 The code is for testing and development purposes only, and is not meant 
 for production usage. 
 
-Engine is based on code base of Single Channel gateway for RaspberryPI
+Engine for gateway is based on code base of Single Channel gateway for RaspberryPI
 which is developed by Thomas Telkamp. Code was ported and extended to run
 on ESP 8266 mcu and provide RTC, Webserver and DNS services.
 
-Maintained by Maarten Westenberg (mw12554@hotmail.com)
+Maintained by Minh Chau (huynhminhchau.k14@gmail.com)
 
 Features
 --------
 - listen on configurable frequency and spreading factor
 - SF7 to SF12
 - status updates
-- can forward to two servers
+- can forward to one server
 - DNS support for server lookup
 - NTP Support for time sync with internet time servers
 - Webserver support (default port 8080)
-- OTA Updates
-- Access Point Mode (for OTA)
+- ABP Activate
 
 Not (yet) supported:
 - PACKET_PUSH_ACK processing
